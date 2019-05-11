@@ -1,5 +1,6 @@
 /*
 curl -d "script=$(cat loadPlugins.groovy)" -v http://localhost:10001/scriptText
+curl --data-urlencode "script=$(< ./loadPlugins.groovy)" http://localhost:10001/scriptText
 */
 import jenkins.model.*
 import java.util.logging.Logger
